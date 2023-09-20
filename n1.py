@@ -3,11 +3,12 @@ while True:
     inp = input()
     if inp.isdigit(): break
     print("Введите числовое значение")
-past = 0
+inp = int(inp)
+past = 9
 while inp > 0:
     number = inp % 10
     inp = inp // 10
-    if past > number:
+    if past < number:
         print("Последовательность цифр не является упорядоченной по убыванию при просмотре справа налево")
         break
     past = number

@@ -1,4 +1,8 @@
-inp = int(input("Введите число\n"))
+print("Введите число")
+while True:
+    inp = input()
+    if inp.isdigit(): break
+    print("Введите числовое значение")
 past = 0
 while inp > 0:
     number = inp % 10
